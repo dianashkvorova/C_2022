@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 double SquaredSum(double a, double b){
@@ -9,9 +8,12 @@ double SquaredSum(double a, double b){
 
 int main()
 {
-    
-    cout << SquaredSum(12, 6) <<"\n";
-    cout << SquaredSum(12, -6) <<"\n";
-    
+    double a, b;
+    for(int i=0;i<5;i++){
+    cin >>a;
+    cin >>b;
+    cout << SquaredSum(a, b) <<"\n";
+    }
     return 0;
 }
+
