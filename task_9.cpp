@@ -1,9 +1,11 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 void reverse(char a[])
 {
-    for (int i=1;i<=11;i++){
+    int d=strlen(a);
+    for (int i=1;i<=d;i++){
     int n=11;
     cout << a[n-i];}
 }
