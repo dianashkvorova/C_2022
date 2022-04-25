@@ -5,8 +5,8 @@ class CreditCard {
     public:
     int Number;
     float Balance;
-    int Put(int V);
-    int Take(int V);
+    float Put(float V);
+    float Take(float V);
     CreditCard(int a, float b);
 };
     
@@ -15,12 +15,12 @@ CreditCard::CreditCard(int a=1234, float b=50){
     Balance=b;
 }
 
-int CreditCard::Put(int V){
+float CreditCard::Put(float V){
         Balance=Balance+V;
         return 0;
     }
 
-int CreditCard::Take(int V){
+float CreditCard::Take(float V){
     Balance=Balance-V;
     return 0;
 }
